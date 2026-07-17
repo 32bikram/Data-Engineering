@@ -1,0 +1,26 @@
+class father():
+    def __init__(self,x):
+        self.father_name = x
+
+    def fun(self):
+        print("father")
+
+class mother():
+    def __init__(self,x):
+        self.mother_name = x
+    def fun(self):
+        print("mother")
+
+class child(father,mother):
+    def __init__(self,x,y,z):
+        self.child_name = x
+        father.__init__(self,y)
+        mother.__init__(self,z)
+
+    def fun(self):
+        print(f"{self.child_name} lives with {self.father_name} and {self.mother_name}")
+        father.fun(self)  #since we are calling through class not obj thats why passing self is required
+        mother.fun(self)
+
+ob = child("bikram", "bipan", "manju")
+ob.fun()

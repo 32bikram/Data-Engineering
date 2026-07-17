@@ -1,6 +1,6 @@
-my_list = [1,9,"9","pi", 'c',0]
-# print(my_list[-3:]) #prints last 3 elements
-# print(my_list[3:]) #also prints last 3 elements
+my_list = [1,9,"9","meow","pi", 'c',0]
+print(my_list[-4:]) #prints last 4 elements
+# print(my_list[3:]) #also prints till last from idx 3
 # print(my_list[:3]) #prints first 3 elements
 # print(my_list[2::]) #starting from index 2 print rest
 # print(my_list[::2]) #skips 1 element than print
